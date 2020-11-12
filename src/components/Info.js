@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Info = ({artistInfo}) => {
 
@@ -32,4 +33,7 @@ const Info = ({artistInfo}) => {
     );
 }
 
+Info.propTypes = {
+    artistInfo: PropTypes.object.isRequired
+}
 export default Info;

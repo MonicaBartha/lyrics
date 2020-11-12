@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import PropTypes from 'prop-types';
 
 const Lyrics = ( {lyrics} ) =>  {
     // not show the h2 before search
@@ -13,4 +14,7 @@ const Lyrics = ( {lyrics} ) =>  {
 }
 
 
+Lyrics.propTypes = {
+    lyrics: PropTypes.string.isRequired
+}
 export default Lyrics;

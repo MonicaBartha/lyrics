@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../index.css';
+import PropTypes from 'prop-types';
 
 const Form = ( {setSearchLyric} ) => {
 
@@ -88,4 +89,7 @@ const searchInfo = e => {
     )
 }
 
+Form.propTypes = {
+    setSearchLyric: PropTypes.func.isRequired
+}
 export default Form;
